@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contact</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-image: url('https://img.freepik.com/premium-photo/hipster-black-office-desk-with-keyboard-copy-space-black-background-top-view_67155-19493.jpg?w=1060');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            font-family: 'Arial', sans-serif;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            position: relative;
+        }
+
+        .center {
+            text-align: center;
+            margin: 20px;
+        }
+
+        h1 {
+            color: #00ffcc;
+            font-size: 1.5em;
+        }
+
+        .contact-box {
+            border: 2px solid #66ccff;
+            padding: 15px;
+            border-radius: 10px;
+            max-width: 300px;
+            margin: 0 auto;
+        }
+
+        p {
+            margin: 10px 0;
+            font-size: 0.9em;
+        }
+
+        a {
+            color: #66ccff;
+            text-decoration: none;
+        }
+
+        a:hover + button {
+            background-color: #66ccff;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #66ccff;
+            color: black;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        button:hover {
+            background-color: hsl(243, 100%, 40%);
+        }
+
+        .back-button {
+            font-size: 24px;
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            color: #66ccff;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="center contact-box">
+        <p><b>Mail ID:</b> <a target="_blank" href="mailto:supriyajarugu6@gmail.com">supriyajarugu6@gmail.com</a></p>
+        <p><b>Mobile:</b> <a href="tel:+6309442499">Contact Me</a></p>
+        <p><b>GitHub:</b> <a target="_blank" href="github.com">Jarugu Supriya</a></p>
+        <p><b>LinkedIn:</b> <a target="_blank" href="linkedin.com">Jarugu Supriya</a></p>
+        <br>
+        <a href="https://mail.google.com/chat/u/0/#chat/welcome" target="_blank"><button>Chat</button></a>
+        <div class="back-button" onclick="goBack()"><i class="fas fa-arrow-left"></i>Back</div>
+    </div>
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>
